@@ -1,5 +1,5 @@
 ---
-title: ValueSets and CodeSystems for WHT CRN IG
+title: ValueSets and CodeSystems for the IG
 layout: default
 active: terminology
 ---
