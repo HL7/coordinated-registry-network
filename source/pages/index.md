@@ -34,7 +34,7 @@ The following table will provide a road map to the reader to follow and absorb t
 | US Core Definitions | The set of definitions applicable to the CRN FHIR IG. (For e.g Definition of“Supported”).| [US-Core Definitions](http://hl7.org/fhir/us/core/STU1//guidance.html)|
 | SDC IG | The artifact provides the framework to use questionnaires for multiple use cases.| [SDC](http://hl7.org/fhir/us/core/sdc/index.html)|
 | CRN Overview | The artifact provides background on Coordinated Registry Network project.| [CRN Overview](crn-overview.html)|
-| Profiles | The artifact defines the various profiles, extensions and resources that make up the CRN FHIR IG.| [Profiles](./guidance.html)|
+| Profiles | The artifact defines the various profiles, extensions and resources that make up the CRN FHIR IG.| [Profiles](profiles.html)|
 | Capability Statements | The artifact defines the various capability statements (implementation requirements) for each CRN actor that make up the PRO FHIR IG.| [Capability Statements](./guidance.html)|
 | Implementation Guidance | The artifact contains guidance and examples that will help implementers of CRN FHIR IG.| [Implementation Guidance](guidance.html)|
 

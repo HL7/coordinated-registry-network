@@ -1,9 +1,7 @@
 
 {% assign id = {{page.id}} %}
-source file: source/pages/\_includes/{{id}}-search.md
 
-~~~
-This is the search markdown file that gets inserted into the sd.html Quick Start section for explanation of the search requirements.
-~~~
 
-Search Requirements
+#### Search Requirements
+
+There are no specific search requirements by the WHT CRN IG beyond what is required by the base resource.
