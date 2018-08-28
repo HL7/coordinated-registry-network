@@ -1,14 +1,16 @@
 ---
-title: ValueSets and CodeSystems defined as part of this Implementation Guide
+title: ValueSets and CodeSystems for WHT CRN IG
 layout: default
 active: terminology
 ---
 #### Value Sets
 
-These value sets have been defined for this implementation guide:
+Currently the WHT CRN IG only uses the Value Sets published by the FHIR Specification, US Core IG, SDC IG and PRO IG. There are no additional CRN specific value sets currently. However once the data elements are finalized, there will be new value sets created as part of the IG for STU ballot.
+
 {% include list-simple-valuesets.xhtml %}
 
 #### Code Systems
 
-**Code systems published in this IG** - Includes US Core defined code systems and externally defined code systems
+Currently the WHT CRN IG only uses the Code Systems published by the FHIR Specification, US Core IG, SDC IG and PRO IG. There are no additional CRN specific CodeSystems defined currently. However once the data elements are finalized, there could be new Code Systems created as part of the IG for STU ballot.
+
 {% include list-simple-codesystems.xhtml %}

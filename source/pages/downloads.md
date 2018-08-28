@@ -10,13 +10,9 @@ The following package file contains an NPM Package used by many of the FHIR tool
 
 - [Package](package.tgz)
 
-**Schematrons** are also available and listed below:
-
-- [...TODO...](#)
-
 **Examples**
 
-all the examples that are used in this Implementation Guide available for download:
+All the examples that are used in this Implementation Guide available for download:
 
 - [XML](examples.xml.zip)
 - [JSON](examples.json.zip)

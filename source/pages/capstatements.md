@@ -1,5 +1,5 @@
 ---
-title: CapabilityStatements defined for this Guide
+title: CapabilityStatements for the IG
 layout: default
 active: capstatements
 ---
