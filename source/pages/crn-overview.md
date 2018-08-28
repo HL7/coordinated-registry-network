@@ -19,48 +19,51 @@ active: overview
 
 ###  Background
 
-A patient’s perspective is critical part of the healthcare eco-system. It can inform decisions regarding prevention, diagnosis, treatment and long-term care. Patients have the ability to give insight on their health that an observer or technology cannot provide. In scenarios where quality of life plays an essential role in treatment, Patient Reported Outcomes (PROs) and Patient Reported Outcome Measure(s) (PROM) are becoming more prevalent. PROs and PROMs can be used to inform the clinical management of individuals, shared decision-making, patient self-management, care planning, goal setting and attainment, and patient-centered outcomes research. The United States Food and Drug Administration (FDA) defines PROs as “any report of the status of a patient’s health condition that comes directly from the patient, without interpretation of the patient’s response by a clinician or anyone else. The outcome can be measured in absolute terms (e.g., severity of a symptom, sign, or state of a disease) or as a change from a previous measure”. PROMs are defined as validated questionnaires or short forms that can eventually turn symptoms into a numerical score and hence measure PROs. While there is promise in the clinical use of PROs and PROMs, health systems have been slow to utilize PRO data due to clinical work flow related operational barriers, technology barriers preventing use of electronic PROs and inclusion of the PRO data in electronic health records (EHRs). Currently some EHRs are currently able to capture PRO data, including the use of the National Institutes of Health (NIH)-funded Patient Reported Outcomes Measurement Information System (PROMIS) instruments, however this information is not commonly collected at the point of care and is not shared with researchers widely. As a result there is a need to use standards such as HL7 FHIR to capture and exchange PRO data. The abstract model and capabilities required for a PRO eco-system is outlined in the next few sections.
+Clinical data registries serve as a repository that maintains various health data on a patient and the healthcare they receive over a period of time. A clinical data registry can focus on a disease or condition, a procedure or even track performance of medical devices used to improve patients’ health. Capturing a holistic picture of a patients’ clinical data in a registry will enable researchers and clinicians to evaluate patient outcomes and quality improvement. In addition, the infrastructure can also provide a basis for post market surveillance of medical devices  and for the development of evidence to support medical device innovation. Finally, the collected, curated data sets, methods, and tools developed can also be used for regulatory purposes, quality benchmarking, coverage decisions, patient-centered outcomes research (PCOR), and other uses.
+However, one of the many challenges with single purpose registries are that they prove too often to be time and cost-intensive, not only for the organizations that collect, manage and analyze the datasets, but also for the hospitals and medical practices that participate in providing data.  In addition, existing patient-centered outcomes research often relies on data captured at the point of care, re-entered into clinical research systems, and then consolidated and transformed for the analysis and research purposes, which is a very complex process. This process is labor-intensive and expensive, as it requires extensive data validation and normalization to assure accurate and effective evaluation. As a result, study designs are often limited to the effects of one particular therapy (i.e., medication or device), rather than a combination of two or more therapies as would exist in the real world. Therefore, having a coordinated network of registries would benefit in improving patient-centered outcomes research where data from multiple registries can be leveraged for multiple use cases, assuming the necessary data elements are already being collected. In order to accomplish the objective of establishing a coordinated registry network, the Women’s Health Technologies (WHT) Coordinated Registry Network (CRN)  project was funded by the Patient-Centered Outcomes Research Trust Fund (PCORTF),  under the Assistant Secretary for Planning and Evaluation (ASPE), part of the U.S. Department of Health and Human Services (HHS).
+ 
 
 
-###  PRO Measure (PROM) Life Cycle
+###  Purpose and Goals of the Project
 
-Figure 1 below shows a typical PROM life cycle starting with the PROM definition and ending with PROM usage. The next few sub-sections define the various life cycle phases.
+The purpose of the WHT CRN project is to create a strategically coordinated registry network for women’s health technologies that will collect patient reported outcomes and other related clinical data from care delivery systems including electronic health records (EHRs) to both enhance existing registries and enrich PCOR data infrastructure pertinent to women’s health conditions. The WHT CRN project is a multi-agency project that includes clinical and informatics experts from the Food and Drug Administration (FDA), the National Institutes of Health (NIH)/National Library of Medicine (NLM), the Office of the National Coordinator for Health Information Technology (ONC), the Agency for Healthcare Research and Quality (AHRQ) and the Medical Device Epidemiology Network Initiative (MDEpiNet),  part of the Epidemiology Research Program (ERP) at the FDA's Center for Devices and Radiological Health (CDRH). 
 
-{% include img.html img="prom-life-cycle.png" caption="Figure 1: PRO Measure Life Cycle " %}
+The WHT CRN project focuses on women’s health as there are many clinical conditions that uniquely affect women (e.g., pelvic floor disorders, uterine fibroids, and female sterilization). The project aims to create a set of linked registries focused on women’s health using data elements and measures expressed in standard structured definitions with the capability to capture and exchange data using the national standards. Usage of national standards will  support interoperability with other data sources via software apps and application programming interfaces (APIs), including those related to a unique device identifier (UDI). These linked registries would be valuable to researchers to design studies that are reflective of the real-world combination of multiple therapies. Additionally, since the original Centers for Disease Control and Prevention’s (CDC) Collaborative Review of Sterilization (CREST) study conducted several decades ago, there has not been a systematic national effort to generate evidence across various sterilization technologies, and, the recent safety concerns have also prompted the FDA to mandate a study of hysteroscopic female contraceptive devices. Manufacturers’ ongoing efforts to address public health questions can greatly benefit from a national registry infrastructure to ensure proper comparison groups. The FDA envisions the WHT CRN project as a way to coordinate and use the findings from this project to inform other CRNs within the FDA’s Center for Devices and Radiological Health (CDRH) Informatics group and to build upon the National Evaluation System for health Technology (NEST)  to “more efficiently generate better evidence for medical device evaluation and regulatory decision-making.” 
 
-
-**PROM Definition** PROM definition phase involves the activities of identifying the relevant research for creation of a PROM, defining the purpose of the PROM, the target audience of the PROM, conditions to consider prior to administering the PROM, collection of PROM data, usage of the collected PROM data and its intended effectiveness. This activity is typically performed by researchers, clinical subject matter experts, provider organizations, patient advocates among others.
-
-**PROM Administration Planning** PROM administration planning entails many decisions that are made by a provider or organization prior to administering a PROM to a patient. These decisions include
-
-* Identifying and selection of an appropriate PROM based on its benefit to various stakeholders which include patients, providers, researchers among others.
-* Customizing the PROM for organizational needs and for compliance purposes (For example, a primary care provider organization may eliminate some of the questions in a PROM if they are not applicable to the setting or the patient’s condition)
-* Identifying the Patient population for which the PROM needs to be administered
-* Identifying “When” the PROM is administered (For example administering a PROM during an encounter, prior to a surgery, post surgery, every 2 months after surgery for a year)
-* Type of training and education needed for the providers, caregivers and others involved in the PROM activities
-* Type of training and education needed for the patients
-* Identifying “How” the PROM will be administered (For example some organizations may use paper, some may use a stand-alone system, some may use EHRs, some may use 3rd party technology such as Assessment Center API)
-* Identifying “Who” will receive the PRO data from the PROM (For example, clinicians may be provided the PRO data prior to the encounter, researchers may be provided the PRO data for secondary uses)
-* Identifying “How” the PRO data is made available to the various stakeholders.
-
-**PROM Creation and Publishing** PROM creation involves the activity of actually creating the PROM instrument which will be administered based on the PROM administration planning outlined earlier. Once the PROM is created it needs to be published to be accessible to the various work flows within the organization. An organization that chooses to use paper to administer PROMs will create the PROM and publish the PROM using paper copies that can be administered. Organizations may choose to publish an electronic version of the PROM in a repository from where a stand-alone health IT system may access the PROM for administration. Organizations may ask their technology vendors to incorporate the PROM into their health IT system so that it can be administered using existing interfaces.
-
-**PROM Administration** PROM administration involves the activity of actually making the PROM available to the patient at the appropriate time, on the desired platform and at the desired location based on the PROM administration planning outlined earlier. Effective PROM administration ensures good response rates and quality data from the patient. An important outcome of administration is the fact that PROM responses depends on mode of administration. (For example, administering the same PROM instrument in a phone call is not considered comparable to self-administration in an office setting.)
-
-**PROM Response Collection** PROM response collection involves the activity of capturing responses from the patient, storing the response data appropriately with provenance and integrity and integrating the data with the rest of the patient’s data within the organization.
-
-**PROM Response Scoring** PROM usage is most effective when the collected data is turned into a numerical score that can be used by providers and researchers. This activity is called scoring. Scoring of a PROM can vary based on the PROM itself and the organization using the PROM. The scores for each PROM administered is a critical part of the PRO data collection before its intended usage. The representation of the PRO scores and making these scores available in a standardized manner will help improve the overall usage of PROs.
-
-**PROM Response & Score Usage** PROM Response & Score usage involves the activity where the providers and researchers use the PRO data collected, the scores that were created as part of their PROM administration activities. PRO usage may also suggest improvements to the PROM over time based on the data collected and this is shown as feedback in the PROM life cycle diagram above. Research use of PROM Responses and Scores may be different from use for clinical decision making, where a provider may develop interpretations that are calibrated to his practice vs. calibrated to a body of evidence. In order for effective usage of
-
-**PROM Life Cycle Activities for Standardization** As described earlier the PROM life cycle contains many different phases many of which are dependent on activities that vary based on the organization intending to administer, collect and use PRO data. While PRO usage could be improved in the real-world by standardizing all life cycle activities described above, we have to account for organizational differences, allow the ability for vendors to innovate and provide value added services around PROs. Hence the following areas identified in the PROM life cycle are considered for standardization as a first step to improving the usage of PROs in the real-world
-
-* PROM creation and publishing
-* PROM administration within EHRs and outside EHRs
-* PROM Response collection and storage
-* PROM scoring representation
+The specific goals of the WHT CRN project include:
+* Help establish a strategically coordinated registry network (CRN) for women’s health technologies and develop tools to facilitate collection of data within the existing and new registries by leveraging clinical care data.
+* Demonstrate that data in these registries can be used to do the following:
+    * Evaluate the effectiveness, quality of life and safety associated with differing treatment options,
+    * Assess the effectiveness and quality of life associated with varying treatment options,
+    * Provide a framework for clinical studies to be conducted within the registry, including industry-sponsored studies for pre-market and post-market regulatory activities, and,
+    * Allow healthcare providers to track surgeon volume, patient outcomes, and quality measures for quality improvement activities and fulfill upcoming Centers for Medicaid and Medicare Services (CMS), Physician Quality and Reporting Systems (PQRS) and maintenance of certification requirements.
 
 
+###  WHT CRN Project Data Elements
+
+This section outlines the data elements that need to be collected by each of the registries to achieve the specific project goals. 
+
+At the time of creation of this IG, the list of data elements have not been finalized, however an initial list of data elements have been identified by registries dealing with different women's health conditions and therapies and the links to the spreadsheets capturing these data elements are present in the table below. 
+
+**Note: The list of data elements are just a draft and are not final and hence are excluded from the ballot** 
+
+| FDA Clinical Working Group Name  | Initial List of Data Elements Identified for WHT CRN project |
+:----------------|-------------------------------------------------------------:|
+| Long Acting Reversible Contraceptives (LARC) | [LARC Draft Data Elements](https://drive.google.com/file/d/17h-EFoae123Sfr4YexFsEEM8xzcPRElF/view?usp=sharing)|
+| Pelvic Organ Prolapse (POP) | [POP Draft Data Elements](https://drive.google.com/file/d/1Wo0aMvGkfBsamzaO7lBKftkfKZZoDqo5/view?usp=sharing)|
+| Uterine Fibroids (UF) | [UF Draft Data Elements](https://drive.google.com/file/d/1TTAgkFzDEcVJbfrYI4fQChjokaYTbYEz/view?usp=sharing)|
+
+
+#### Next Steps for Data Elements Finalization
+ 
+The initial list of data elements have been identified by each of the registries participating in the WHT CRN project, however additional work will be performed to harmonize these data elements and reach consensus on the final list of data elements that will be used by the project for piloting and real-world adoption as the IG gets finalized for the STU ballot. The final list of data elements will be published by National Library of Medicine (NLM) at [CDE Repository](https://cde.nlm.nih.gov/cde/search) for others to use the data elements as part of their activities. 
+ 
+#### Data Elements and FHIR Profiles, Extensions
+ 
+Once consensus is achieved and a final list of data elements are created for the WHT CRN project, these data elements will be mapped to various existing profiles from US-Core IG which is based on Common Clinical Data Set from ONC 2015 Edition, Structured Data Capture (SDC) IG which provides the framework for using Questionnaire and Questionnaire Response resources to collect data in a structured manner and Patient Reported Outcomes (PRO) FHIR IG which provides the framework on how to use the Questionnaire Resource for capturing Patient Reported Outcome data. 
+In cases where the data elements are not directly mappable to any of the existing profiles from the other IGs, new profiles and extensions will be created as necessary. The approach used can be examined in the Profiles tab of the IG.
+ 
+ 
 ###  Abstract Model, Actors and Definitions
 
 This section outlines the abstract model which is used to identify the specific actors and interactions that are in-scope for the PRO FHIR IG. There are two different abstract models to consider and are outlined below
