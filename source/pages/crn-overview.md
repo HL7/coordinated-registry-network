@@ -132,6 +132,40 @@ As shown in Figure 2 above, the data flow is as follows
 * Step 9: In this step, the Data Partner Client will compile the query results and submit it back to the Researcher Portal.
 *  Step 10: In this step, the researcher or authorized user will access the data retrieved based on the query submitted. 
 
+All of the interactions outlined above are published and discussed in more detail in [Data Access Framework (DAF) Research](http://hl7.org/fhir/us/daf-research) Implementation Guide.
+
+### Relationship between CRN, Structured Data Capture (SDC), US Core, Patient Reported Outcomes (PRO) and DAF-Research IGs
+
+The WHT CRN project's vast scope requires multiple modules with various capabilities to create the necessary infrastructure. These modules and their specifications can be created newly as part of the WHT CRN project or we can evaluate similar modules that already exist and evaluate their effectiveness in meeting the use cases requirements of the WHT CRN project.
+
+In this section we outline the purpose of the different IG's and how they can be leveraged to implement the required CRN capabilities. 
+
+**CRN and US Core**: 
+The [US Core Implementation Guide](http://hl7.org/fhir/us/core/index.html) is based on the ONC 2015 Edition Common Clinical Data Set (CCDS) requirements and **contains profiles that are used to access** the 2015 Edition data elements that are already captured by clinical care delivery systems such as EHRs. The US Core profiles have broad adoption in the real-world compartively due to the Argonaut project (consisting of multiple EHR vendors) and the ONC 2015 Edition API certification requirements. 
+
+As part of the WHT CRN project, when the data elements required to be captured overlap with the ONC 2015 Edition CCDS, the US Core profiles and their existing data element definitions should be considered due to their broad adoption in the real-world. Additionally, if the CRN systems can interface with the EHR or Care Delivery Systems capturing the CCDS data, then the WHT CRN project should consider auto-populating the instruments with data already collected to reduce the burden on the providers and care givers.
+
+**CRN and SDC** 
+The [SDC IG](http://build.fhir.org/ig/HL7/sdc/index.html) provides a framework to use the Questionnaire and QuestionnaireResponse FHIR Resources for multiple use cases. The capabilities described in the SDC IG include 
+* Ability to create instruments for real-world in an interoperable manner.
+* Ability to specify display and rendering requirements for instruments
+* Ability to pre-populate instruments from existing clinical data
+* Ability to convert data collected into FHIR Resources
+* Ability to administer Adaptive Questionnaires or instruments. 
+* Associating Instruments with Research protocols and Studies.
+
+The WHT CRN project requires many of these capabilities for real-world implementation and hence WHT CRN IG will reuse the SDC IG capabilities before re-creating similar capabilities from scratch. 
+
+**CRN and PRO** 
+The [PRO IG](http://build.fhir.org/ig/HL7/patient-reported-outcomes/index.html) provides a framework to use the Questionnaire and QuestionnaireResponse FHIR Resources for administering Patient Reported Outcome Measures and score the collected responses. Administering PRO Measures and capturing their data is an integral part of CRN requirements. 
+
+When PRO Measures need to be administered for CRN purposes, the CRN IG will reuse these capabilities from the PRO IG.
+
+**CRN and DAF-Research** 
+The [DAF-Research](http://hl7.org/fhir/us/daf-research) provides a framework for researchers to access data from multiple data sources by composing queries and submitting these queries for data extraction, monitoring the status of these queries and retrieving results for the various submitted queries. 
+
+When the CRN project requires these data access capabilities, the CRN IG will reuse the capabilities from the DAF-Research IG.
+
 
 <!-- {% raw %}>{% include link-list.md %} {% endraw %}-->
 

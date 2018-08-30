@@ -40,7 +40,7 @@ Depending on the implementation of the FHIR Server, the Questionnaire Resource h
 
 At a minimum, HTTPS protocols must be used for the implementation using the right certificate.
 
-#### External PRO Administration System Implementation
+#### External CRN Data Collection System Implementation
 ​The capabilities and requirements that need to be implemented by the External CRN Data Collection System are outlined at Conformance Requirements.
 
 Developers can follow these steps to implement the above capabilities.

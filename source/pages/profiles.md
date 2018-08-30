@@ -8,7 +8,12 @@ active: profiles
 **US Core Profiles Reuse:** 
 The WHT CRN IG re-uses the following profiles from US-Core.
 
-**Note:** Since the data elements are not finalized yet, we are starting with US Core profiles as needed for the specific resources.As new data elements get finalized and are required for WHT CRN project in addition to data elements already present in US Core, then new profiles for CRN project will be created. The table below lists example data elements that are being considered for each US Core profile that is relevant to WHT CRN project. For a comprehensive list of date elements being considered to be added on top of US Core please refer to the data element spreadsheets documented as part of the [CRN Overview](crn-overview.html).
+---
+**Note:** Since the data elements are not finalized yet, we are starting with US Core profiles as needed for the specific data elements that overlap with US Core profiles. As new data elements get finalized and are required for WHT CRN project in addition to data elements already present in US Core, then new profiles for CRN project will be created. The table below lists example data elements that are being considered for each US Core profile that is relevant to WHT CRN project. For a comprehensive list of date elements being considered in addition to US Core data elements please refer to the data element spreadsheets documented as part of the [CRN Overview](crn-overview.html).
+
+These US Core profiles will only be reused to either auto populate the CRN Instrument or convert captured data from CRN Instruments into FHIR Resources.  
+
+---
 
 | US-Core profile  | Example Data Elements that are in addition to US-Core being considered                   |
 :------------------|-----------------------------------------------------------------------------------------:|
@@ -35,9 +40,10 @@ SDC profiles are used for collecting observational data related to procedures, c
 
 | SDC profile  | Specific Usage for SDC profile               |
 :------------------|-----------------------------------------------------------------------------------------:|
-| [Questionnaire Profile](http://hl7.org/fhir/us/sdc/sdc-questionnaire.html) | Collect observational data |
-| [QuestionnaireResponse Profile](http://hl7.org/fhir/us/sdc/sdc-questionnaireresponse.html) |Collect observational data  |
-
+| [SDC Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire.html) | Collect observational data |
+| [SDC QuestionnaireResponse](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaireresponse.html) |Collect observational data  |
+| [SDC Populatable Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-populate.html)| Questionnaire with information required for auto population |
+| [SDC Extractable Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-extract.html)|Questionnaire with information that can be used to transform answers to FHIR Resources|
 
 **PRO profiles Reuse**
 
@@ -47,8 +53,8 @@ The PRO profiles will be used to administer questionnaires such as QOL, AMSS, FS
 
 | PRO profile  | Specific Usage for PRO profile               |
 :------------------|-----------------------------------------------------------------------------------------:|
-| [Questionnaire Profile](http://hl7.org/fhir/us/sdc/sdc-questionnaire.html) | Collect PRO data (e.g QOL) and score data from patients |
-| [QuestionnaireResponse Profile](http://hl7.org/fhir/us/sdc/sdc-questionnaireresponse.html) |Collect PRO (e.g) data and score data from patients. |
+| [SDC Adaptive Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-adapt.html)| Collect PRO data (e.g QOL) and score data from patients |
+| [SDC Adaptive QuestionnaireResponse](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaireresponse-adapt.html) |Collect PRO (e.g) data and score data from patients. |
 
 
 **CRN Specific Profiles**
