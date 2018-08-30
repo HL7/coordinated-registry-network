@@ -42,7 +42,7 @@ SDC profiles are used for collecting observational data related to procedures, c
 :------------------|-----------------------------------------------------------------------------------------:|
 | [SDC Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire.html) | Collect observational data |
 | [SDC QuestionnaireResponse](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaireresponse.html) |Collect observational data  |
-| [SDC Populatable Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-populate.html)| Questionnaire with information required for auto population |
+| [SDC Populatable Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-populate.html)| Questionnaire with information required for auto or pre population |
 | [SDC Extractable Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-extract.html)|Questionnaire with information that can be used to transform answers to FHIR Resources|
 
 **PRO profiles Reuse**
@@ -53,8 +53,8 @@ The PRO profiles will be used to administer questionnaires such as QOL, AMSS, FS
 
 | PRO profile  | Specific Usage for PRO profile               |
 :------------------|-----------------------------------------------------------------------------------------:|
-| [SDC Adaptive Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-adapt.html)| Collect PRO data (e.g QOL) and score data from patients |
-| [SDC Adaptive QuestionnaireResponse](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaireresponse-adapt.html) |Collect PRO (e.g) data and score data from patients. |
+|[SDC Adaptive Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-adapt.html)| Collect PRO data (e.g QOL) and score data from patients |
+|[SDC Adaptive QuestionnaireResponse](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaireresponse-adapt.html) |Collect PRO (e.g) data and score data from patients. |
 
 
 **CRN Specific Profiles**
@@ -64,6 +64,13 @@ The following are profiles that will be created specifically by CRN to collect D
 
 
 {% include list-profiles.xhtml %}
+
+---
+**Feedback Required**
+
+Please provide feedback and comments on the usage of the above listed profiles and their purpose through pilot and challenge implementations.
+
+---
 
 <br />
 
