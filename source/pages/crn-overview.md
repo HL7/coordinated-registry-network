@@ -132,7 +132,7 @@ As shown in Figure 2 above, the data flow is as follows
 * Step 9: In this step, the Data Partner Client will compile the query results and submit it back to the Researcher Portal.
 *  Step 10: In this step, the researcher or authorized user will access the data retrieved based on the query submitted. 
 
-All of the interactions outlined above are published and discussed in more detail in [Data Access Framework (DAF) Research](http://hl7.org/fhir/us/daf-research) Implementation Guide.
+All of the interactions outlined above are published and discussed in more detail in [Data Access Framework (DAF) Research](http://hl7.org/fhir/us/daf-research/index.html) Implementation Guide.
 
 ### Relationship between CRN, Structured Data Capture (SDC), US Core, Patient Reported Outcomes (PRO) and DAF-Research IGs
 
@@ -162,7 +162,7 @@ The [PRO IG](http://build.fhir.org/ig/HL7/patient-reported-outcomes/index.html) 
 When PRO Measures need to be administered for CRN purposes, the CRN IG will reuse these capabilities from the PRO IG.
 
 **CRN and DAF-Research** 
-The [DAF-Research](http://hl7.org/fhir/us/daf-research) provides a framework for researchers to access data from multiple data sources by composing queries and submitting these queries for data extraction, monitoring the status of these queries and retrieving results for the various submitted queries. 
+The [DAF-Research](http://hl7.org/fhir/us/daf-research/index.html) provides a framework for researchers to access data from multiple data sources by composing queries and submitting these queries for data extraction, monitoring the status of these queries and retrieving results for the various submitted queries. 
 
 When the CRN project requires these data access capabilities, the CRN IG will reuse the capabilities from the DAF-Research IG.
 

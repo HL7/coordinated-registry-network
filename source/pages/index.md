@@ -31,8 +31,8 @@ The following table will provide a road map to the reader to follow and absorb t
 
 | Topic to Read  | What it Contains and its relationship to CRN IG | Where can I find the content ? |
 |:---------------|:------------------------------------------------|-------------------------------:|
-| US Core Definitions | The set of definitions applicable to the CRN FHIR IG. (Definition of“Supported or MUST Support”, Usage of Code Bindings in US Core Profiles.).| [US-Core Definitions](http://hl7.org/fhir/us/core/STU1//guidance.html)|
-| SDC IG | The artifact provides the framework to use questionnaires for multiple use cases.| [SDC](http://hl7.org/fhir/us/core/sdc/index.html)|
+| US Core Definitions | The set of definitions applicable to the CRN FHIR IG. (Definition of“Supported or MUST Support”, Usage of Code Bindings in US Core Profiles.).| [US-Core Definitions](http://hl7.org/fhir/us/core/guidance.html)|
+| SDC IG | The artifact provides the framework to use questionnaires for multiple use cases.| [SDC](http://build.fhir.org/ig/HL7/sdc/index.html)|
 | CRN Overview | The artifact provides background on Coordinated Registry Network project.| [CRN Overview](crn-overview.html)|
 | Profiles | The artifact defines the various profiles, extensions and resources that make up the CRN FHIR IG.| [Profiles](profiles.html)|
 | Capability Statements | The artifact defines the various capability statements (implementation requirements) for each CRN actor that make up the PRO FHIR IG.| [Capability Statements](capstatements.html)|
