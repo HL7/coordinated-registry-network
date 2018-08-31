@@ -2,9 +2,9 @@
 <!--Hidden IG for de facto IG publishing-->
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
-  <url value="http://hl7.org/fhir/us/coordinated-registry-network/ImplementationGuide/ig"/>
+  <url value="http://hl7.org/fhir/us/womens-health-registries/ImplementationGuide/ig"/>
   <version value="0.0.0"/>
-  <name value="Coordinated Registry Network"/>
+  <name value="Womens Health Technology Coordinated Registry Network"/>
   <status value="draft"/>
   <publisher value="Office of the National Coordinator"/>
   <copyright value="Used by permission of Office of the National Coordinator, In all rights reserved Creative Commons License"/>
@@ -26,7 +26,7 @@
     </resource>   -->
     <page>
       <nameUrl value="index.md"/>
-      <title value="Coordinated Registry Network IG"/>
+      <title value="WHT Coordinated Registry Network IG"/>
       <generation value="markdown"/>
     </page>
   </definition>

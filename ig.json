@@ -1,7 +1,7 @@
 {
   "allviews" : "true",
   "broken-links" : "warning",
-  "canonicalBase" : "http://hl7.org/fhir/us/coordinated-registry-network",
+  "canonicalBase" : "http://hl7.org/fhir/us/womens-health-registries",
   "defaults" : {
     "Any" : {
       "template-base" : "base.html",
@@ -40,6 +40,14 @@
       "template-base" : "base.html"
     }
   },
+  "dependencyList" : [
+    {
+      "location" : "http://hl7.org/fhir/uv/sdc",
+      "name" : "sdc",
+      "source" : "dependencies/sdc",
+      "version" : "dev"
+    }
+  ],
   "do-transforms" : "false",
   "extraTemplates" : [
     "mappings"
@@ -54,7 +62,7 @@
   ],
   "mappings" : "true",
   "no-inactive-codes" : "false",
-  "npm-name" : "hl7.fhir.us.coordinated-registry-network",
+  "npm-name" : "hl7.fhir.us.womens-health-registries",
   "paths" : {
     "output" : "output",
     "pages" : [
