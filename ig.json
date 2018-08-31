@@ -40,14 +40,6 @@
       "template-base" : "base.html"
     }
   },
-  "dependencyList" : [
-    {
-      "location" : "http://hl7.org/fhir/us/core",
-      "name" : "uscore",
-      "source" : "dependencies/uscore-vp",
-      "version" : "1.0.1"
-    }
-  ],
   "do-transforms" : "false",
   "extraTemplates" : [
     "mappings"
