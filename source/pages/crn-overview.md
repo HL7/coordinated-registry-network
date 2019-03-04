@@ -41,11 +41,11 @@ The specific goals of the WHT CRN project include:
 
 ###  WHT CRN Project Data Elements
 
-This section outlines the data elements that need to be collected by each of the registries to achieve the specific project goals. 
+This section outlines the data elements that will be collected by each of the registries to achieve the specific project goals. 
 
-At the time of creation of this IG, the list of data elements have not been finalized, however an initial list of data elements have been identified by registries dealing with different women's health conditions and therapies and the links to the spreadsheets capturing these data elements are present in the table below. 
+The data element list is called as the [Common Data Elements](https://drive.google.com/file/d/1GGRZOJcLBAW_p_czcfaSe7xAirs8KPw6/view?usp=sharing) (CDEs) for the CRN project. The list of data elements may change as the project progresses, pilots are completed and new use cases are added, however the above spreadsheet is the consensus approved CDE list for the project.
 
-**Note: The list of data elements are just a draft and are not final and hence are excluded from the ballot** 
+**Note: The list of data elements were curated by NLM working with the various registries and FDA Clinical Working Groups. The below table contains data element lists provided by different working groups which helped in creating the final CDE list.** 
 
 | FDA Clinical Working Group Name  | Initial List of Data Elements Identified for WHT CRN project |
 :----------------|-------------------------------------------------------------:|
@@ -54,14 +54,15 @@ At the time of creation of this IG, the list of data elements have not been fina
 | Uterine Fibroids (UF) | [UF Draft Data Elements](https://drive.google.com/file/d/1TTAgkFzDEcVJbfrYI4fQChjokaYTbYEz/view?usp=sharing)|
 
 
-#### Next Steps for Data Elements Finalization
+#### NLM's CDE Repository
  
-The initial list of data elements have been identified by each of the registries participating in the WHT CRN project, however additional work will be performed to harmonize these data elements and reach consensus on the final list of data elements that will be used by the project for piloting and real-world adoption as the IG gets finalized for the STU ballot. The final list of data elements will be published by National Library of Medicine (NLM) at [CDE Repository](https://cde.nlm.nih.gov/cde/search) for others to use the data elements as part of their activities. 
+The [Common Data Elements](https://drive.google.com/file/d/1GGRZOJcLBAW_p_czcfaSe7xAirs8KPw6/view?usp=sharing) 
+The data elements are published by National Library of Medicine (NLM) at [CDE Repository](https://cde.nlm.nih.gov/cde/search) for others to use the data elements as part of their activities. The CDEs can also be accessed as Questionnaire Resource at the NLM's [Questionnaire Representation of CDE](https://cde.nlm.nih.gov/formView?tinyId=XJwYSNJ4I).
  
 #### Data Elements and FHIR Profiles, Extensions
  
-Once consensus is achieved and a final list of data elements are created for the WHT CRN project, these data elements will be mapped to various existing profiles from US-Core IG which is based on Common Clinical Data Set from ONC 2015 Edition, Structured Data Capture (SDC) IG which provides the framework for using Questionnaire and Questionnaire Response resources to collect data in a structured manner and Patient Reported Outcomes (PRO) FHIR IG which provides the framework on how to use the Questionnaire Resource for capturing Patient Reported Outcome data. 
-In cases where the data elements are not directly mappable to any of the existing profiles from the other IGs, new profiles and extensions will be created as necessary. The approach used can be examined in the Profiles tab of the IG.
+The CDEs are mapped to various existing profiles from US-Core IG which is based on Common Clinical Data Set from ONC 2015 Edition, Structured Data Capture (SDC) IG which provides the framework for using Questionnaire and Questionnaire Response resources to collect data in a structured manner and Patient Reported Outcomes (PRO) FHIR IG which provides the framework on how to use the Questionnaire Resource for capturing Patient Reported Outcome data. 
+In cases where the data elements are not directly mappable to any of the existing profiles from the other IGs, new profiles and extensions are created as necessary. The results of the mapping can be found in the profiles tab of the implementation guide.
  
  
 ###  Abstract Model, Actors and Definitions

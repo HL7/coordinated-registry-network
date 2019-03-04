@@ -25,7 +25,7 @@
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/patient"/>|<exampleBoolean value="true|false"/>
     </resource>   -->
     <page>
-      <nameUrl value="index.md"/>
+<!--      <nameUrl value="index.md"/> -->
       <title value="WHT Coordinated Registry Network IG"/>
       <generation value="markdown"/>
     </page>
