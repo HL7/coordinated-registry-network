@@ -1,8 +1,16 @@
 ---
-title: Profiles defined as part of this Guide
+title: Mappings and Profiles
 layout: default
 active: profiles
 ---
+
+#### Mappings of CDEs to FHIR
+
+The following is a mapping of each of the specific CDE element to its FHIR Resource/profile.
+
+{% include CDEs_FHIR.html %}
+
+
 #### Profiles
 
 **US Core Profiles Reuse:** 
@@ -68,11 +76,13 @@ The following are profiles that will be created specifically by CRN to collect D
 ---
 **Feedback Required**
 
-Please provide feedback and comments on the usage of the above listed profiles and their purpose through pilot and challenge implementations.
+Please provide feedback and comments on the usage of the above listed profiles and their purpose through pilot implementations.
 
 ---
 
 <br />
+
+
 
 #### Extensions
 
