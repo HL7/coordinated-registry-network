@@ -46,6 +46,12 @@
       "name" : "sdc",
       "source" : "dependencies/sdc",
       "version" : "dev"
+    },
+    {
+      "location" : "http://hl7.org/fhir/us/core-r4",
+      "name" : "uscore",
+      "source" : "dependencies/us-core-r4",
+      "version" : "current"
     }
   ],
   "do-transforms" : "false",
