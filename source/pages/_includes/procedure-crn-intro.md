@@ -10,15 +10,13 @@ The profile is to be used for the WTH CRN project to capture the specific proced
 
 #### Mandatory Data Elements and Terminology
 
-The following data-elements are mandatory (i.e data MUST be present). blah blah blah
+The following data-elements are mandatory (i.e data MUST be present).
 
 **must have:**
 
-1. status
 1. patient
 
 **Additional Profile specific implementation guidance:**
 
-#### Examples
+None.
 
-- Examples to be added after finalization of data elements.

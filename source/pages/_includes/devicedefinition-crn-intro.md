@@ -10,7 +10,7 @@ The profile is to be used for the WTH CRN project to capture the specific device
 
 #### Mandatory Data Elements and Terminology
 
-The following data-elements are mandatory (i.e data MUST be present). blah blah blah
+The following data-elements are mandatory (i.e data MUST be present).
 
 **must have:**
 

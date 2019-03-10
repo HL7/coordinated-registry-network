@@ -14,7 +14,7 @@ The following is a mapping of each of the specific CDE element to its FHIR Resou
 #### Profiles
 
 **US Core Profiles Reuse:** 
-The WHT CRN IG re-uses the following profiles from US-Core.
+The WHT CRN IG re-uses the following profiles from US-Core to represent the various CDEs.
 
 ---
 **Note:** Since the data elements are not finalized yet, we are starting with US Core profiles as needed for the specific data elements that overlap with US Core profiles. As new data elements get finalized and are required for WHT CRN project in addition to data elements already present in US Core, then new profiles for CRN project will be created. The table below lists example data elements that are being considered for each US Core profile that is relevant to WHT CRN project. For a comprehensive list of date elements being considered in addition to US Core data elements please refer to the data element spreadsheets documented as part of the [CRN Overview](crn-overview.html).
