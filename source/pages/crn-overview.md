@@ -96,6 +96,8 @@ The GUDID is being populated with data about devices according to the compliance
  
 In the context of the CRN workflows, data from the GUDID database will be used to populate fields in the CRN Instrument being used for data collection. 
 
+The APIs to be used for accessing the GUDID can be found at [GUDID Database APIs](https://accessgudid.nlm.nih.gov/resources/home). 
+
 **Terminology APIs**: In the context of CRN work flows, Terminology APIs provide CodeSystems and ValueSets to be used in conjunction with the CRN Instrument so that data being collected can be validated in real-time to avoid errors, and collect codified data that is ready for machine processing and analysis.
 
 **Data Flow Description**

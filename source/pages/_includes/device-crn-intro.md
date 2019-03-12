@@ -19,4 +19,6 @@ The following data-elements are mandatory (i.e data MUST be present).
 
 **Additional Profile specific implementation guidance:**
 
-None.
+The udiCarrier can only contain either carrierAIDC or carrierHRF along with its appropriate entryType.
+In case an organization wants to represent both carrierAIDC or carrierHRF, then multiple udiCarrier entries must be used.
+Also refer to the invariants present on the various data elements in the profile.
