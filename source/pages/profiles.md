@@ -25,7 +25,7 @@ These US Core profiles will only be reused to either auto populate the CRN Instr
 
 | US-Core profile  | Example Data Elements that are in addition to US-Core being considered                   |
 :------------------|-----------------------------------------------------------------------------------------:|
-| [US Core Allergy Intolerance Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-allergyintolerance.html) | None|
+| [US Core Allergy Intolerance Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-allergyintolerance.html) | None|
 | [US Core Condition (a.k.a Problem) Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-condition.html) |Bodysite, Manifestation, symptoms, Age |
 | [US Core Diagnostic Report Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport.html) | Based on, Specimen|
 | [US Core Immunization Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-immunization.html) | None|

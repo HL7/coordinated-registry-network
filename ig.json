@@ -45,11 +45,11 @@
       "location" : "http://hl7.org/fhir/uv/sdc",
       "name" : "sdc",
       "source" : "dependencies/sdc",
-      "version" : "dev"
+      "version" : "current"
     },
     {
-      "location" : "http://hl7.org/fhir/us/core-r4",
-      "name" : "uscore",
+      "location" : "http://hl7.org/fhir/us/core",
+      "name" : "uscoreR4",
       "source" : "dependencies/us-core-r4",
       "version" : "current"
     }
@@ -58,7 +58,7 @@
   "extraTemplates" : [
     "mappings"
   ],
-  "fixed-business-version" : "0.1.0",
+  "fixed-business-version" : "1.0.0",
   "gen-examples" : "false",
   "html-template" : "html-template.html",
   "igtemplate-dir" : "/Users/nbashyam/git/coordinated-registry-network",
@@ -85,7 +85,7 @@
     "txCache" : "generated_output/txCache"
   },
   "pub_url" : "nagesh.bashyam@drajer.com",
-  "publisher" : "Health eData Inc",
+  "publisher" : "Office of the National Coordinator",
   "resources" : {
     "CapabilityStatement/server" : {
       "base" : "CapabilityStatement-server.html",
