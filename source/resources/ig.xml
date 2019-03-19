@@ -15,7 +15,11 @@
   <!-- 0..1 SPDX license code for this IG (or not-open-source) -->
   <fhirVersion value="4.0.0"/>
   <!-- 0..1 FHIR Version this Implementation Guide targets -->
-  <definition><resource><reference><reference value="CapabilityStatement/server"/></reference><exampleBoolean value="false"/></resource>
+  <definition>
+     <resource><reference><reference value="CapabilityStatement/server"/></reference><exampleBoolean value="false"/></resource>
+     <resource><reference><reference value="StructureDefinition/procedure-crn"/></reference><exampleBoolean value="false"/></resource>
+     <resource><reference><reference value="StructureDefinition/device-crn"/></reference><exampleBoolean value="false"/></resource>
+     <resource><reference><reference value="StructureDefinition/devicedefinition-crn"/></reference><exampleBoolean value="false"/></resource>
      <!-- <resource>
        <reference>
      <reference value="[type]/[id]"/>
