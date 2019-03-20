@@ -26,19 +26,19 @@ These US Core profiles will only be reused to either auto populate the CRN Instr
 | US-Core profile  | Example Data Elements that are in addition to US-Core being considered                   |
 :------------------|-----------------------------------------------------------------------------------------:|
 | [US Core Allergy Intolerance Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-allergyintolerance.html) | None|
-| [US Core Condition (a.k.a Problem) Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-condition.html) |Bodysite, Manifestation, symptoms, Age |
-| [US Core Diagnostic Report Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-diagnosticreport.html) | Based on, Specimen|
-| [US Core Immunization Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-immunization.html) | None|
-| [US Core Location Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-location.html) | None|
-| [US Core Medication Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-medication.html) | None|
-| [US Core MedicationRequest Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-medicationrequest.html) | None|
-| [US Core MedicationStatement Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-medicationstatement.html) | None|
-| [US Core Practitioner Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-practitioner.html)| None|
-| [US Core Results Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-observationresults.html) |Age of patient when observation was recorded, device information |
-| [US Core Smoking Status Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-smokingstatus.html) |Age of patient|
-| [US Core Organization Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-organization.html) | None|
-| [US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) | Address, Marital Status, Contact Information |
-| [Vital Signs profile based on FHIR Core profiles]({{site.data.fhir.uscoreR4}}us-core-vitalsigns.html) | None |
+| [US Core Condition (a.k.a Problem) Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-condition.html) |Bodysite, Manifestation, symptoms, Age |
+| [US Core Diagnostic Report Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-diagnosticreport.html) | Based on, Specimen|
+| [US Core Immunization Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-immunization.html) | None|
+| [US Core Location Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-location.html) | None|
+| [US Core Medication Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-medication.html) | None|
+| [US Core MedicationRequest Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-medicationrequest.html) | None|
+| [US Core MedicationStatement Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-medicationstatement.html) | None|
+| [US Core Practitioner Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-practitioner.html)| None|
+| [US Core Results Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-observationresults.html) |Age of patient when observation was recorded, device information |
+| [US Core Smoking Status Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-smokingstatus.html) |Age of patient|
+| [US Core Organization Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-organization.html) | None|
+| [US Core Patient Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-patient.html) | Address, Marital Status, Contact Information |
+| Vital Signs profiles from FHIR core | None |
 
 
 **SDC profiles Reuse**
