@@ -38,7 +38,7 @@ These US Core profiles will only be reused to either auto populate the CRN Instr
 | [US Core Smoking Status Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-smokingstatus.html) |Age of patient|
 | [US Core Organization Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-organization.html) | None|
 | [US Core Patient Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html) | Address, Marital Status, Contact Information |
-| [Vital Signs from FHIR Core](http://hl7.org/fhir/us/core/us-core-vitalsigns.html) | None |
+| [Vital Signs profile based on FHIR Core profiles]({{site.data.fhir.uscoreR4}}us-core-vitalsigns.html) | None |
 
 
 **SDC profiles Reuse**
