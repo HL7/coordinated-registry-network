@@ -16,53 +16,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <SupBook>
-   <Path>/Users/nbashyam/git/coordinated-registry-network/source/resources/procedure-crn-profile-spreadsheet.xml</Path>
-   <SheetName>Instructions</SheetName>
-   <SheetName>Metadata</SheetName>
-   <SheetName>procedure-crn</SheetName>
-   <SheetName>procedure-crn-Inv</SheetName>
-   <SheetName>Extensions</SheetName>
-   <SheetName>Search</SheetName>
-   <SheetName>Operations</SheetName>
-   <SheetName>Bindings</SheetName>
-   <Xct>
-    <Count>0</Count>
-    <SheetIndex>0</SheetIndex>
-   </Xct>
-   <Xct>
-    <Count>0</Count>
-    <SheetIndex>1</SheetIndex>
-   </Xct>
-   <Xct>
-    <Count>0</Count>
-    <SheetIndex>2</SheetIndex>
-   </Xct>
-   <Xct>
-    <Count>0</Count>
-    <SheetIndex>3</SheetIndex>
-   </Xct>
-   <Xct>
-    <Count>0</Count>
-    <SheetIndex>4</SheetIndex>
-   </Xct>
-   <Xct>
-    <Count>0</Count>
-    <SheetIndex>5</SheetIndex>
-   </Xct>
-   <Xct>
-    <Count>0</Count>
-    <SheetIndex>6</SheetIndex>
-   </Xct>
-   <Xct>
-    <Count>0</Count>
-    <SheetIndex>7</SheetIndex>
-   </Xct>
-  </SupBook>
-  <WindowHeight>13940</WindowHeight>
-  <WindowWidth>24640</WindowWidth>
-  <WindowTopX>460</WindowTopX>
-  <WindowTopY>780</WindowTopY>
+  <WindowHeight>14500</WindowHeight>
+  <WindowWidth>25440</WindowWidth>
+  <WindowTopX>80</WindowTopX>
+  <WindowTopY>460</WindowTopY>
   <ActiveSheet>1</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -890,7 +847,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">name</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">DeviceDefinition-crn</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">DeviceDefinitionCRN</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">display</Data></Cell>
@@ -974,7 +931,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>5</ActiveRow>
+     <ActiveRow>3</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -1018,8 +975,7 @@
     <Cell><Data ss:Type="String">Profile.title</Data></Cell>
     <Cell ss:StyleID="s86"><Data ss:Type="String">Profile Name</Data><Comment
       ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
-        html:Color="#000000">        </Font><Font html:Face="Tahoma"
-        x:Family="Swiss" html:Size="8" html:Color="#000000">The name of an element for the purposes of this profile (used for slicing, code generation, etc. (see wiki for more details)</Font><Font
+        html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">The name of an element for the purposes of this profile (used for slicing, code generation, etc. (see wiki for more details)</Font><Font
         html:Color="#000000">       </Font></ss:Data></Comment><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Discriminator</Data><Comment
@@ -1118,7 +1074,7 @@
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Formula="=Metadata!R[1]C[1]"><Data ss:Type="String">DeviceDefinition-crn</Data></Cell>
+    <Cell ss:Formula="=Metadata!R[1]C[1]"><Data ss:Type="String">DeviceDefinitionCRN</Data></Cell>
     <Cell ss:Formula="=Metadata!R[2]C"><Data ss:Type="String">DeviceDefinition CRN</Data></Cell>
     <Cell ss:StyleID="s92"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s93"><NamedCell ss:Name="_FilterDatabase"/></Cell>
