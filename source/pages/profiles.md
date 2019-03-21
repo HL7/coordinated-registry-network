@@ -15,6 +15,9 @@ Note: The mapping provided below along the profile and resource suggestions will
 
 #### Profiles
 
+**NOTE:** All the profiles listed here are not required for conformance. For detailed conformance requirements please refer to the CapabilityStatements section.
+
+
 **US Core Profiles Reuse:** 
 The WHT CRN IG re-uses the US-Core profiles identified in the above table to auto-populate Questionnaires and/or transform QuestionnaireResponses to first class FHIR resources.
 
@@ -22,13 +25,13 @@ The WHT CRN IG re-uses the US-Core profiles identified in the above table to aut
 **SDC profiles Reuse**
 
 The WHT CRN IG re-uses the following profiles from SDC.
-SDC profiles are used for collecting observational data related to procedures, conditions and other aspects.
+SDC profiles of Questionnaires and QuestionnaireResponse are used for collecting data related to procedures, conditions and demographic data for WHT CRN purposes. 
 
-| SDC profile  | Specific Usage for SDC profile               |
+| SDC profile  | Specific Usage of SDC profile in WHT CRN              |
 :------------------|-----------------------------------------------------------------------------------------:|
-| [SDC Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire.html) | Collect observational data |
-| [SDC QuestionnaireResponse](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaireresponse.html) |Collect observational data  |
-| [SDC Populatable Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-populate.html)| Questionnaire with information required for auto or pre population |
+| [SDC Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire.html) | Basic data collection questions|
+| [SDC QuestionnaireResponse](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaireresponse.html) |Basic data collection storing responses |
+| [SDC Populatable Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-populate.html)| Questionnaire with information required for auto or pre population during data collection|
 | [SDC Extractable Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-extract.html)|Questionnaire with information that can be used to transform answers to FHIR Resources|
 
 **PRO profiles Reuse**
@@ -37,10 +40,10 @@ The WHT CRN IG re-uses the following profiles from PRO.
 The PRO profiles will be used to administer questionnaires such as QOL, AMSS, FSFI etc.
 
 
-| PRO profile  | Specific Usage for PRO profile               |
+| PRO profile  | Specific Usage of PRO profile in WHT CRN              |
 :------------------|-----------------------------------------------------------------------------------------:|
 |[SDC Adaptive Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-adapt.html)| Collect PRO data (e.g QOL) and score data from patients |
-|[SDC Adaptive QuestionnaireResponse](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaireresponse-adapt.html) |Collect PRO (e.g) data and score data from patients. |
+|[SDC Adaptive QuestionnaireResponse](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaireresponse-adapt.html) |Collect PRO (e.g) data and score collected data. |
 
 
 **CRN Specific Profiles**
@@ -64,7 +67,7 @@ Please provide feedback and comments on the usage of the above listed profiles a
 
 #### Extensions
 
-There are currently no extensions defined for this implementaiton guide since the data elements list is still being finalized.
+There are currently no extensions defined for this implementation guide.
 
 
 {% include list-extensions.xhtml %}

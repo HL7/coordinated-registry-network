@@ -33,7 +33,7 @@ The specific goals of the WHT CRN project include:
     * Evaluate the effectiveness, quality of life and safety associated with differing treatment options,
     * Assess the effectiveness and quality of life associated with varying treatment options,
     * Provide a framework for clinical studies to be conducted within the registry, including industry-sponsored studies for pre-market and post-market regulatory activities, and,
-    * Allow healthcare providers to track surgeon volume, patient outcomes, and quality measures for quality improvement activities and fulfill upcoming Centers for Medicaid and Medicare Services (CMS), Physician Quality and Reporting Systems (PQRS) and maintenance of certification requirements.
+    * Allow healthcare providers to track surgeon volume, patient outcomes, and quality measures for quality improvement activities and fulfill upcoming Centers for Medicaid and Medicare Services (CMS), MIPS and/or APM requirements under MACRA, and maintenance of certification requirements.
 
 
 ###  WHT CRN Project Data Elements
@@ -119,6 +119,7 @@ Figure 2 below shows the abstract model, actors and the data flow accessing the 
 The following are the additional actors that are part of the abstract model for data access.
  
 **Researcher Portal**: The Researcher Portal is a system that can be used by authorized researchers and other personnel to compose queries and submit queries to the various registries that contain womens health data. Once the data is received the Researcher Portal provides user interfaces for the researchers to view, download and analyze the data received. 
+*Policy Note*: Researchers and authorized users typically have to be approved by the registries for submitting queries and receiving results. In addition, registries may require IRB approvals and may restrict the type of data that is returned. (For e.g a registry may only allow aggregate data to be returned). 
 
 **Data Partner Client**: Data Partner Client is specific software module that is instantiated for each Women's Health Registry so that it can coordinate with the Researcher Portal and download the queries that needs to be executed, execute the queries on the registry infrastructure and compile the results and submit the results back to the Researcher Portal.  
 
@@ -128,8 +129,8 @@ As shown in Figure 2 above, the data flow is as follows
 
 * Step 6: In this step, a researcher or an authorized user will compose a query to access data from the registry and submit the query for distribution to the various registries. As part of the query composition, the data element definitions could be used to create a query. 
 * Step 7: In Step 7, the Data Partner Client will collaborate with the Researcher Portal to download the queries that are intended for its registry and queue them for execution.
-* Step 8: The Data Partner Client will collaborate withe local administrators and systems to execut the query.
-* Step 9: In this step, the Data Partner Client will compile the query results and submit it back to the Researcher Portal.
+* Step 8: The Data Partner Client will be used by the local administrators and other systems to execute the query.
+* Step 9: In this step, the Data Partner Client will compile the query results and submit it back to the Researcher Portal after obtaining approval from the local administrators.
 *  Step 10: In this step, the researcher or authorized user will access the data retrieved based on the query submitted. 
 
 All of the interactions outlined above are published and discussed in more detail in [Data Access Framework (DAF) Research](http://hl7.org/fhir/us/daf-research/index.html) Implementation Guide.

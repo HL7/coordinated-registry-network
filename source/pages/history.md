@@ -11,4 +11,4 @@ This table provides a list of all the versions of the {{site.data.fhir.igName}} 
 |**Current Version**|
 |04-2019|0.2.0|The current version based on FHIR Release 4.0.0|
 |**Older Version**|
-|[09-2018](http://hl7.org/fhir/us/womens-health-registries/2018Sep/index.html)|0.1.0| The previous version that was based on FHIR Release 3.0.1|
+|09-2018 URL: http://hl7.org/fhir/us/womens-health-registries/2018Sep/index.html|0.1.0| The version balloted in September 2018 that was based on FHIR Release 3.5.0|

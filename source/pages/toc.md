@@ -13,6 +13,7 @@ active: toc
     <li><a href="terminology.html">Terminology</a></li>
     <li><a href="guidance.html">Implementation Guidance</a></li>
     <li><a href="downloads.html">Downloads</a></li>
+    li><a href="history.html">History</a></li>
     </li>
    </ul>
 </div>
