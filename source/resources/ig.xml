@@ -3,7 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <url value="http://hl7.org/fhir/us/womens-health-registries/ImplementationGuide/ig"/>
-  <version value="1.0.0"/>
+  <version value="0.2.0"/>
   <name value="Womens_Health_Technology_Coordinated_Registry_Network"/>
   <status value="draft"/>
   <publisher value="Office of the National Coordinator"/>

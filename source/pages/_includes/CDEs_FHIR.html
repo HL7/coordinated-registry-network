@@ -9,12 +9,12 @@
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Procedure Date</td>
-        <td class="maptable17">Procedure.</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">Procedure.performedDateTime</td>
+        <td class="maptable17">procedure-crn</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Provider ID</td>
-        <td class="maptable17">Practitioner</td>
+        <td class="maptable17">Practitioner.identifier</td>
         <td class="maptable17">us-core-practitioner</td>
       </tr>
       <tr style='height:20px;'>
@@ -40,7 +40,7 @@
       <tr style='height:20px;'>
         <td class="maptable16">UDI</td>
         <td class="maptable17">Device.udiCarrier</td>
-        <td class="maptable17">device-crn</td>
+        <td class="maptable17">device-crn, devicedefinition-crn</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Pregnancy Status</td>
@@ -80,22 +80,22 @@
       <tr style='height:20px;'>
         <td class="maptable16">Procedures Performed</td>
         <td class="maptable17">Procedure.code, Procedure.status</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">procedure-crn</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Concomitant Procedures Performed</td>
         <td class="maptable17">Procedure.code, Procedure.status, Procedure.partOf</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">procedure-crn</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Surgical History Abdominal</td>
         <td class="maptable17">Procedure.code, Procedure.status</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">procedure-crn</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Post Operative Complications/Adverse Events</td>
         <td class="maptable17">Procedure.complication, Procedure.complicationDetail, AdverseEvent</td>
-        <td class="maptable17">us-core-procedure, AdverseEvent</td>
+        <td class="maptable17">procedure-crn, AdverseEvent</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Pelvic Pain</td>
@@ -125,7 +125,7 @@
       <tr style='height:20px;'>
         <td class="maptable16">Unsuccessful Procedure</td>
         <td class="maptable17">Procedure.code, Procedure.status, Procedure.outcome, Procedure.partOf</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">procedure-crn</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Patient Name</td>
@@ -150,7 +150,7 @@
       <tr style='height:20px;'>
         <td class="maptable16">pat_pref_language_spoken</td>
         <td class="maptable17">Patient.communication.language</td>
-        <td class="maptable17">Patient</td>
+        <td class="maptable17">us-core-patient</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">race</td>

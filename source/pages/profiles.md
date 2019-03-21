@@ -6,7 +6,9 @@ active: profiles
 
 #### Mappings of CDEs to FHIR
 
-The following is a mapping of each of the specific CDE element to its FHIR Resource/profile.
+The following is a mapping of each of the specific CDE element to its FHIR Resource/profile. The table contains three columns. The first column represents the data element that has been approved via consensus within the WHT CRN project. This is mapped to the specific FHIR Resource and its data elements in the second column. The third column provides a recommendation for pilots to use a specific profile for the project if appropriate or recommends the use of the FHIR Resource directly to experiment and gain more experience before creating and proliferating profiles. 
+
+Note: The mapping provided below along the profile and resource suggestions will be used to auto-populate the Questionnaire (which contains the questions) and/or transform QuestionnaireResponse (which contains the collected data) into first class FHIR resources. 
 
 {% include CDEs_FHIR.html %}
 
@@ -14,31 +16,7 @@ The following is a mapping of each of the specific CDE element to its FHIR Resou
 #### Profiles
 
 **US Core Profiles Reuse:** 
-The WHT CRN IG re-uses the following profiles from US-Core to represent the various CDEs.
-
----
-**Note:** Since the data elements are not finalized yet, we are starting with US Core profiles as needed for the specific data elements that overlap with US Core profiles. As new data elements get finalized and are required for WHT CRN project in addition to data elements already present in US Core, then new profiles for CRN project will be created. The table below lists example data elements that are being considered for each US Core profile that is relevant to WHT CRN project. For a comprehensive list of date elements being considered in addition to US Core data elements please refer to the data element spreadsheets documented as part of the [CRN Overview](crn-overview.html).
-
-These US Core profiles will only be reused to either auto populate the CRN Instrument or convert captured data from CRN Instruments into FHIR Resources.  
-
----
-
-| US-Core profile  | Example Data Elements that are in addition to US-Core being considered                   |
-:------------------|-----------------------------------------------------------------------------------------:|
-| [US Core Allergy Intolerance Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-allergyintolerance.html) | None|
-| [US Core Condition (a.k.a Problem) Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-condition.html) |Bodysite, Manifestation, symptoms, Age |
-| [US Core Diagnostic Report Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-diagnosticreport.html) | Based on, Specimen|
-| [US Core Immunization Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-immunization.html) | None|
-| [US Core Location Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-location.html) | None|
-| [US Core Medication Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-medication.html) | None|
-| [US Core MedicationRequest Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-medicationrequest.html) | None|
-| [US Core MedicationStatement Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-medicationstatement.html) | None|
-| [US Core Practitioner Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-practitioner.html)| None|
-| [US Core Results Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-observationresults.html) |Age of patient when observation was recorded, device information |
-| [US Core Smoking Status Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-smokingstatus.html) |Age of patient|
-| [US Core Organization Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-organization.html) | None|
-| [US Core Patient Profile]({{site.data.fhir.uscoreR4}}StructureDefinition-us-core-patient.html) | Address, Marital Status, Contact Information |
-| Vital Signs profiles from FHIR core | None |
+The WHT CRN IG re-uses the US-Core profiles identified in the above table to auto-populate Questionnaires and/or transform QuestionnaireResponses to first class FHIR resources.
 
 
 **SDC profiles Reuse**

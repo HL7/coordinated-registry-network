@@ -4,8 +4,6 @@ layout: default
 active: home
 ---
 
-{% include publish-box.html %}
-
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
@@ -21,7 +19,7 @@ active: home
 
 The Women's Health Technologies (WHT) Coordinated Registry Network (CRN) FHIR Implementation Guide (IG) will focus on capturing and exchanging data related to women's health. The data that is captured will be made available to both providers and authorized researchers. While the CRN FHIR IG can be applied to multiple use cases, the current requirements have been drawn from Patient Centered Outcomes Research Network (PCORNet) use cases and implementations. The capabilities described as part of the IG are intended to be leveraged to build US data infrastructure for a Learning Health System (LHS).
 
-WHT CRN FHIR IG will leverage the US-Core IG and profiles for the resources that overlap with US-Core. The WHT CRN FHIR IG will also leverage the Structured Data Capture (SDC) FHIR IG. In addition the IG will create profiles and extensions necessary for CRN purposes which do not exist in US-Core and SDC FHIR IG.
+WHT CRN FHIR IG will leverage the US-Core IG and profiles for the resources that overlap with US-Core. The WHT CRN FHIR IG will also leverage the Structured Data Capture (SDC) FHIR IG. 
 
 The next section provides a road map for the reader to walk through the implementation guide.
 
