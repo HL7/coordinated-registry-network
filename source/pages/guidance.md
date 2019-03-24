@@ -17,11 +17,11 @@ f: http://build.fhir.org/
 The implementation guidance outlined in this page provides useful information for developers implementing the various CRN actors and their capabilities. All resources and parameters used in this part of the IG are examples and are expected to conform to the resources, profiles and other constraints outlined in the [CapabilityStatements](capstatements.html).
 
 
-#### CRN Instrument and Meta data Repository Implementation
+#### CRN Instrument and Metadata Repository Implementation
 
-​The capabilities and requirements that need to be implemented by the CRN Instrument and Meta data Repository are outlined at Conformance Requirements.
+​The capabilities and requirements that need to be implemented by the CRN Instrument and Metadata Repository are outlined as Conformance Requirements in the IG's Capability Statements.
 
-Developers can follow these steps to implement the above capabilities.
+Developers can follow these steps to implement the above capabilities:
 
 **Step 1:** Implement a FHIR Server. (Choose either STU3 or DSTU2)
 
@@ -40,7 +40,7 @@ Publish the FHIR Server Capability Statement for the Server.
 
 `GET [BaseURL]/Questionnaire/1234` - Receive a payload (body) of Questionnaire in JSON format.
 
-`GET [BaseURL]/Questionnaire/?_summary` - Receive all Questionnaires present in the system in summary format.
+`GET [BaseURL]/Questionnaire/?_summary=true` - Receive all Questionnaires present in the system in summary format.
 
 * Search API - Find Specific questionnaires.
 
@@ -54,7 +54,7 @@ At a minimum, HTTPS protocols must be used for the implementation using the righ
 
 #### External CRN Data Collection System Implementation
 
-​The capabilities and requirements that need to be implemented by the External CRN Data Collection System are outlined at Conformance Requirements.
+​The capabilities and requirements that need to be implemented by the External CRN Data Collection System are outlined as Conformance Requirements in IG's Capability Statements.
 
 Developers can follow these steps to implement the above capabilities.
 
@@ -74,7 +74,7 @@ Publish the FHIR Server Capability Statement for the Server.
 
 `GET [BaseURL]/Questionnaire/1234` - Receive a payload (body) of Questionnaire in JSON format.
 
-`GET [BaseURL]/Questionnaire/?_summary` - Receive all Questionnaires present in the system in summary format.
+`GET [BaseURL]/Questionnaire/?_summary=true` - Receive all Questionnaires present in the system in summary format.
 
 * Search API - Find Specific questionnaires.
 
@@ -131,9 +131,9 @@ The External CRN Data Collection System should implement the FHIRPath based extr
 
 The External CRN Data Collection System should invoke the POST APIs on the Womens Health Registry to submit the collected data for the patient using QuestionnaireResponse and when available US Core profiles representing other FHIR Resources.
 
-#### Womens Health Registry Implementation
+#### Women's Health Registry Implementation
 
-​The capabilities and requirements that need to be implemented by the Womens Health Registry are outlined at Conformance Requirements.
+​The capabilities and requirements that need to be implemented by the Women's Health Registry are outlined as Conformance Requirements in the IG's Capability Statements.
 
 Developers can follow these steps to implement the above capabilities.
 
@@ -153,7 +153,7 @@ Publish the FHIR Server Capability Statement for the Server.
 
 `GET [BaseURL]/Questionnaire/1234` - Receive a payload (body) of Questionnaire in JSON format.
 
-`GET [BaseURL]/Questionnaire/?_summary` - Receive all Questionnaires present in the system in summary format.
+`GET [BaseURL]/Questionnaire/?_summary=true` - Receive all Questionnaires present in the system in summary format.
 
 * Search API - Find Specific questionnaires.
 
@@ -182,7 +182,7 @@ At a minimum, HTTPS protocols must be used for the implementation using the righ
 
 **Step 4:** Implement Support for US Core profiles.
 
-The Womens Health Registry should support US Core profiles in order to receive granular FHIR Resources representing collected data. For more information on the APIs to be supported refer to the US Core IG.
+The Women's Health Registry should support US Core profiles in order to receive granular FHIR Resources representing collected data. For more information on the APIs to be supported refer to the US Core IG.
 
 
 

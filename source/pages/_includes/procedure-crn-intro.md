@@ -1,12 +1,11 @@
 
 {% assign id = {{page.id}} %}
-source file: source/pages/\_includes/{{id}}-intro.md
 
 {{site.data.structuredefinitions.[id].description}}
 
 #### Scope and Usage
 
-The profile is to be used for the WTH CRN project to capture the specific procedure information performed on the patient.
+The profile is to be used for the WHT CRN project to capture the specific procedure information performed on the patient.
 
 #### Mandatory Data Elements and Terminology
 

@@ -68,7 +68,7 @@ This section outlines the abstract model which is used to identify the specific 
 
 * __Abstract model for collecting WHT CRN data__: In this model, the focus is on the data collection from patients undergoing various treatments of interest using a combination of clinical care delivery systems like EHRs and independent apps to collect specific CRN data elements.
 	 	
-* __Abstract model for accessing collected data from Womens Health Registries__: In this model, the focus is on the ability of researchers to access the data already collected and persisted in the registries.
+* __Abstract model for accessing collected data from Women's Health Registries__: In this model, the focus is on the ability of researchers to access the data already collected and persisted in the registries.
 	
 	
 #### Abstract Model for collecting WHT CRN data 
@@ -85,13 +85,13 @@ Figure 1 below shows the abstract model, actors and the data flow for WHT CRN da
 
 **External CRN Data Collection System**: In the context of CRN work flows, External CRN Data Collection Systems are those which are considered to be independent and external to the EHR or Other Health IT system used for care delivery. There are many different variations of these systems. Some examples include independent health IT systems which have no connection to an EHR (e.g Tablets with CRN modules used to collect CRN data and have their own databases to store the data), a SMART on FHIR App which can be launched from an EHR with the patient context and communicate with the EHR is used to collect and store CRN data. The key aspect of these external CRN data collection systems is the fact that they are outside the clinical care delivery system (i.e EHR) and hence will need a mechanism to integrate with the EHR for the CRN data to be useful widely.
 
-**Womens Health Registry**: In the context of CRN work flows, Womens Health Registry is the system that collects the data relevant to specific conditions related to women's health and makes the data available to researchers and authorized federal agencies for studies.
+**Women's Health Registry**: In the context of CRN work flows, Women's Health Registry is the system that collects the data relevant to specific conditions related to women's health and makes the data available to researchers and authorized federal agencies for studies.
 
-**GUDID Database**: The Global Unique Device Identification Database (GUDID) is a database administered by the FDA that serves as a reference catalog for every device with an identifier. Under the FDA UDI rule, the labeler of each medical device labeled with a unique device identifier (UDI) must submit information concerning that device to the GUDID, unless subject to an exception or alternative.
+**GUDID Database**: The Global Unique Device Identification Database (GUDID) is a database administered by the FDA and its data is made publicly available by NLM’s AccessGUDID.  AccessGUDID serves as a reference catalog for every device with a device identifier. Under the FDA UDI rule, the labeler of each medical device labeled with a unique device identifier (UDI) must submit information concerning that device to the GUDID, unless subject to an exception or alternative.
 According to the UDI rule, “The labeler is the person who causes a label to be applied to a device, or who causes the label to be modified, with the intent that the device will be introduced into interstate commerce without any subsequent replacement or modification of the label; in most instances, the labeler would be the device manufacturer, but the labeler may be a specification developer, a single-use device reprocessor, a convenience kit assembler, a repackager, or a relabeler.”
 The GUDID is being populated with data about devices according to the compliance timeline published in conjunction with the UDI rule. The GUDID contains ONLY the device identifier (DI), which serves as the primary key to obtain device information in the database. Production Identifiers (PIs) are not submitted to or stored in the GUDID, but the GUDID contains PI flags to indicate which PI attributes are on the device label.
  
-In the context of the CRN workflows, data from the GUDID database will be used to populate fields in the CRN Instrument being used for data collection. 
+In the context of the CRN workflows, data from the AccessGUDID database and its APIs will be used to populate fields in the CRN Instrument being used for data collection (specifically the Device Lookup API and Parse UDI API).
 
 The APIs to be used for accessing the GUDID can be found at [GUDID Database APIs](https://accessgudid.nlm.nih.gov/resources/home). 
 
@@ -110,7 +110,7 @@ As shown in the Figure 1 above, the data flow is as follows
 * Step 5: In this step, the External CRN Data Collection System sends the information collected to the Women's Health Registry as needed.  
 
 
-#### Abstract Model for accessing collected data from Womens Health Registries
+#### Abstract Model for accessing collected data from Women's Health Registries
 
 Figure 2 below shows the abstract model, actors and the data flow accessing the collected data from registries. The actors and their interactions are outlined in the next few paragraphs.
 

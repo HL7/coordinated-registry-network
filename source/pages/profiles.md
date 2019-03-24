@@ -6,7 +6,7 @@ active: profiles
 
 #### Mappings of CDEs to FHIR
 
-The following is a mapping of each of the specific CDE element to its FHIR Resource/profile. The table contains three columns. The first column represents the data element that has been approved via consensus within the WHT CRN project. This is mapped to the specific FHIR Resource and its data elements in the second column. The third column provides a recommendation for pilots to use a specific profile for the project if appropriate or recommends the use of the FHIR Resource directly to experiment and gain more experience before creating and proliferating profiles. 
+The following is a mapping of each of the specific CDE element to a FHIR Resource/profile. The table contains three columns. The first column represents the data element that has been approved via consensus within the WHT CRN project. This is mapped to a specific FHIR Resource and its data elements in the second column. The third column provides a recommendation for pilots to use a specific profile for the project if appropriate or recommends the use of the FHIR Resource directly to experiment and gain more experience before creating and proliferating profiles. 
 
 Note: The mapping provided below along the profile and resource suggestions will be used to auto-populate the Questionnaire (which contains the questions) and/or transform QuestionnaireResponse (which contains the collected data) into first class FHIR resources. 
 
@@ -43,7 +43,7 @@ The PRO profiles will be used to administer questionnaires such as QOL, AMSS, FS
 | PRO profile  | Specific Usage of PRO profile in WHT CRN              |
 :------------------|-----------------------------------------------------------------------------------------:|
 |[SDC Adaptive Questionnaire](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaire-adapt.html)| Collect PRO data (e.g QOL) and score data from patients |
-|[SDC Adaptive QuestionnaireResponse](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaireresponse-adapt.html) |Collect PRO (e.g) data and score collected data. |
+|[SDC Adaptive QuestionnaireResponse](http://build.fhir.org/ig/HL7/sdc/sdc-questionnaireresponse-adapt.html) |Collect PRO (e.g QOL, AMSS, FSFI) data and score collected data. |
 
 
 **CRN Specific Profiles**
@@ -57,7 +57,7 @@ The following are profiles that will be created specifically by CRN to collect D
 ---
 **Feedback Required**
 
-Please provide feedback and comments on the usage of the above listed profiles and their purpose through pilot implementations.
+Please provide feedback and comments on the usage of the above profiles and their purpose through pilot implementations.
 
 ---
 
