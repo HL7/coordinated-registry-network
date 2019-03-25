@@ -4,10 +4,17 @@
   <id value="ig"/>
   <url value="http://hl7.org/fhir/us/womens-health-registries/ImplementationGuide/ig"/>
   <version value="0.2.0"/>
-  <name value="Womens_Health_Technology_Coordinated_Registry_Network"/>
+  <name value="WomensHealthTechnologyCoordinatedRegistryNetwork"/>
+  <title value="Womens Health Technology Coordinated Registry Network"/>
   <status value="draft"/>
-  <publisher value="Office of the National Coordinator"/>
-  <copyright value="Used by permission of Office of the National Coordinator, In all rights reserved Creative Commons License"/>
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
+<copyright value="Used by permission of HL7, all rights reserved Creative Commons License"/>
+<contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/rcrim"/>
+    </telecom>
+  </contact>
   <!-- 0..1 Use and/or publishing restrictions -->
   <packageId value="hl7.org.fhir.us.womens-health-registries"/>
   <!-- 0..1 NPM Package name for IG -->
