@@ -6,14 +6,15 @@
  "list" : [{
   "version" : "current",
   "desc" : "Continuous Integration Build (latest in version control)",
-  "path" : "http://build.fhir.org/ig/HL7/coordinated-registry-network/index.html",
+  "path" : "http://hl7.org/fhir/us/womens-health-registries",
   "status" : "ci-build",
-  "current" : true
+  "current" : true,
+  "sequence" : "Release 4"
  },{
   "version" : "0.1.0",  
   "date" : "2018-08-31", 
   "desc" : "STU 3 Comment Ballot",   
-  "path" : "http://hl7.org/fhir/us/womens-health-registries/2018Sep/index.html",   
+  "path" : "http://hl7.org/fhir/us/womens-health-registries/2018Sep",   
   "status" : "ballot",   
   "sequence" : "STU 3"
  }]
